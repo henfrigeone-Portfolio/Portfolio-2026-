@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  PORTFOLIO — index.html
+  ============================================================================
+  EDIT ME FIRST: search this file (and data.js) for "Hen Frige" and
+  "henfrigeone@gmail.com" and replace with your real name / email — they're
+  used consistently across the nav, about, contact and meta tags below.
+  Project content lives entirely in data.js — see the comment at the top of
+  that file to add, edit or remove case studies.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hen Frige — Designer | Brand, Print & Product Design</title>
+  <meta name="description" content="Hen Frige is a multidisciplinary designer working across brand identity, print, social and digital product design. Selected work, capabilities and contact.">
+  <meta name="keywords" content="graphic designer portfolio, brand identity design, packaging design, UI UX design, print design, social media design">
+  <meta name="author" content="Hen Frige">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.noalaurent.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hen Frige — Designer | Brand, Print & Product Design">
+  <meta property="og:description" content="Selected work across brand identity, print, social and digital product design.">
+  <meta property="og:image" content="assets/images/misc/og-cover.jpg">
+  <meta property="og:url" content="https://www.noalaurent.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Hen Frige">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hen Frige — Designer | Brand, Print & Product Design">
+  <meta name="twitter:description" content="Selected work across brand identity, print, social and digital product design.">
+  <meta name="twitter:image" content="assets/images/misc/og-cover.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#0a0a0d">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hen Frige",
+    "jobTitle": "Designer",
+    "url": "https://www.noalaurent.com/",
+    "email": "henfrigeone@gmail.com",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ==================================================================
+       LOADER
+  =================================================================== -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-mark" aria-hidden="true">
+      <span style="animation-delay:.02s">N</span><span style="animation-delay:.06s">L</span><span style="animation-delay:.10s">.</span>
+    </div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Custom cursor (desktop only, hidden on touch via CSS) -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"><span>View</span></div>
+
+  <!-- ==================================================================
+       HEADER / NAVIGATION
+  =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a href="#top" class="logo" aria-label="Hen Frige — home">Noa<span class="dot">.</span></a>
+
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#work" data-nav>Work</a>
+        <a href="#about" data-nav>About</a>
+        <a href="#skills" data-nav>Skills</a>
+        <a href="#contact" data-nav>Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary">
+          Say hello
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMobile" aria-label="Open menu">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile" aria-hidden="true">
+    <ul>
+      <li><a href="#work" data-nav-mobile>Work</a></li>
+      <li><a href="#about" data-nav-mobile>About</a></li>
+      <li><a href="#skills" data-nav-mobile>Skills</a></li>
+      <li><a href="#contact" data-nav-mobile>Contact</a></li>
+    </ul>
+    <div class="nav-mobile-footer">
+      <a href="mailto:henfrigeone@gmail.com">Email</a>
+      <a href="#" data-social="instagram">Instagram</a>
+      <a href="#" data-social="linkedin">LinkedIn</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ================================================================
+         HERO
+    ================================================================= -->
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container">
+
+        <div class="hero-top">
+          <div class="hero-avail">
+            <span class="pulse" aria-hidden="true"></span>
+            Available for select freelance &amp; full-time roles
+          </div>
+          <span class="eyebrow">Portfolio — 2023&ndash;2026</span>
+        </div>
+
+        <h1 class="hero-heading">
+          <span class="line"><span>Identity, print &amp;</span></span>
+          <span class="line"><span><em>product</em> design.</span></span>
+        </h1>
+
+        <div class="hero-bottom">
+          <p class="hero-lead">
+            A multidisciplinary design practice spanning brand identity, editorial print,
+            social campaigns and digital product interfaces — built for teams and founders
+            who need range without giving up craft.
+          </p>
+          <div class="hero-meta">
+            <div><strong>Based</strong>Remote — worldwide</div>
+            <div><strong>Focus</strong>Branding · Print · Social · UI/UX</div>
+            <div><strong>Currently</strong>Open to new projects</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-scroll">
+        <span class="line-anim" aria-hidden="true"></span>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SELECTED PROJECTS
+    ================================================================= -->
+    <section class="projects" id="work">
+      <div class="container">
+
+        <div class="section-head" data-reveal>
+          <div>
+            <span class="section-num">01 / Work</span>
+            <h2>Selected&nbsp;Projects</h2>
+          </div>
+          <p class="section-desc">
+            A cross-section of recent brand, print, social and product work.
+            Filter by discipline or open any project for the full case study.
+          </p>
+        </div>
+
+        <!-- Filter bar: buttons are generated to match CATEGORIES in data.js,
+             plus an "All" option, so this stays in sync automatically. -->
+        <div class="filter-bar" id="filterBar" role="group" aria-label="Filter projects by category"></div>
+
+        <!-- Project rows are rendered entirely from PROJECTS in data.js -->
+        <div class="project-list" id="projectList" aria-live="polite"></div>
+
+        <!-- Empty state shown when a filter matches zero projects -->
+        <p class="filter-empty" id="filterEmpty" hidden>
+          No projects in this category yet — check back soon, or explore another filter above.
+        </p>
+
+      </div>
+
+      <!-- Floating cursor-follow preview image (desktop signature detail) -->
+      <div class="row-preview" id="rowPreview" aria-hidden="true"><img alt="" id="rowPreviewImg" loading="eager"></div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT
+    ================================================================= -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+
+        <div class="about-portrait" data-reveal>
+          <div class="about-portrait-mark" aria-hidden="true"><span>N.</span></div>
+          <span class="frame-label">Hen Frige — Designer</span>
+        </div>
+
+        <div class="about-text">
+          <span class="eyebrow" data-reveal>02 / About</span>
+          <p class="lead" data-reveal>
+            I design brands, layouts and interfaces that hold up under scrutiny —
+            <em>the kind of work that still looks considered</em> a year after it ships.
+          </p>
+          <p data-reveal>
+            My practice sits across four disciplines rather than one: brand identity,
+            print and editorial design, social content systems, and digital product UI.
+            Most of my best work happens at the seams between them — a brand system
+            that has to survive being reduced to an app icon, or a print campaign that
+            gets reformatted for a phone screen an hour after it's approved.
+          </p>
+          <p data-reveal>
+            I care about craft at every scale: the kerning on a wordmark, the grid
+            underneath a magazine spread, the easing curve on a button. Clients come
+            to me when they need range across formats without the work feeling like
+            it was designed by four different people.
+          </p>
+
+          <div class="about-stats" data-reveal>
+            <div>
+              <div class="stat-num">4+</div>
+              <div class="stat-label">Design disciplines</div>
+            </div>
+            <div>
+              <div class="stat-num">10</div>
+              <div class="stat-label">Featured projects</div>
+            </div>
+            <div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Hands-on craft</div>
+            </div>
+          </div>
+
+          <div class="about-clients" data-reveal>
+            <span class="eyebrow">Working across</span>
+            <div class="client-marquee">
+              <span>Brand Identity</span>
+              <span>Packaging</span>
+              <span>Editorial &amp; Print</span>
+              <span>Social Campaigns</span>
+              <span>Product UI/UX</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SKILLS
+    ================================================================= -->
+    <section class="skills" id="skills">
+
+      <div class="skills-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Brand Identity<span>Art Direction<span>Packaging<span>Editorial Layout<span>Social Design<span>UI/UX<span>Typography<span>Prototyping</span></span></span></span></span></span></span></span>
+          <span>Brand Identity<span>Art Direction<span>Packaging<span>Editorial Layout<span>Social Design<span>UI/UX<span>Typography<span>Prototyping</span></span></span></span></span></span></span></span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <span class="section-num">03 / Skills</span>
+            <h2>Capabilities</h2>
+          </div>
+          <p class="section-desc">
+            Six areas I work in most, and the tools I reach for in each.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card" data-reveal>
+            <span class="skill-index">01</span>
+            <h3>Brand Identity</h3>
+            <p>Logos, mark systems and guidelines built to hold up from a favicon to a storefront.</p>
+          </div>
+          <div class="skill-card" data-reveal data-reveal-delay="1">
+            <span class="skill-index">02</span>
+            <h3>Print &amp; Editorial</h3>
+            <p>Magazine layouts, posters and packaging, grounded in typography and grid.</p>
+          </div>
+          <div class="skill-card" data-reveal data-reveal-delay="2">
+            <span class="skill-index">03</span>
+            <h3>Social &amp; Campaign</h3>
+            <p>Modular content systems that keep a fast-moving feed on-brand.</p>
+          </div>
+          <div class="skill-card" data-reveal data-reveal-delay="3">
+            <span class="skill-index">04</span>
+            <h3>UI / UX Design</h3>
+            <p>Interfaces and product screens designed for clarity first, style second.</p>
+          </div>
+          <div class="skill-card" data-reveal>
+            <span class="skill-index">05</span>
+            <h3>Motion &amp; Prototyping</h3>
+            <p>Interaction detail and micro-motion that make an interface feel alive.</p>
+          </div>
+          <div class="skill-card" data-reveal data-reveal-delay="1">
+            <span class="skill-index">06</span>
+            <h3>Tools</h3>
+            <p>Figma, Adobe Illustrator, Photoshop, InDesign, After Effects, Webflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CONTACT
+    ================================================================= -->
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <span class="eyebrow" data-reveal>04 / Contact</span>
+        <h2 data-reveal>Let's build <em>something good.</em></h2>
+        <p class="contact-lead" data-reveal>
+          Have a brand, campaign or product that needs a design partner?
+          I'm currently open to new freelance and full-time work.
+        </p>
+
+        <button class="email-copy" id="emailCopy" data-reveal type="button" aria-label="Copy email address henfrigeone@gmail.com">
+          henfrigeone@gmail.com
+          <span class="copy-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 01-1-1V4a1 1 0 011-1h10a1 1 0 011 1v1"/></svg>
+          </span>
+          <span class="copy-toast" role="status">Copied!</span>
+        </button>
+
+        <div class="contact-actions" data-reveal>
+          <a class="btn btn-primary" href="mailto:henfrigeone@gmail.com">
+            Email me
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+          <a class="btn" href="#" download>
+            Download CV
+          </a>
+        </div>
+
+        <div class="contact-socials" data-reveal>
+          <a href="#" data-social="instagram">Instagram</a>
+          <a href="#" data-social="linkedin">LinkedIn</a>
+          <a href="#" data-social="behance">Behance</a>
+          <a href="#" data-social="dribbble">Dribbble</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================================================================
+       FOOTER
+  =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#top" class="logo">Noa<span class="dot">.</span></a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Hen Frige. All rights reserved.</span>
+        <a href="mailto:henfrigeone@gmail.com">henfrigeone@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- ==================================================================
+       PROJECT MODAL (case study) — populated by script.js
+  =================================================================== -->
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-close">
+      <span class="modal-nav-hint">Esc to close</span>
+      <button class="close-btn" id="modalCloseBtn" aria-label="Close case study">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div id="modalContent"><!-- injected per-project by script.js --></div>
+  </div>
+
+  <!-- Lightbox for gallery image zoom -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
