@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="workspaceTitle">
+  <title id="workspaceTitle">Illustration of a designer's desk with a laptop, color palette and sketches</title>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#15151a"/>
+      <stop offset="100%" stop-color="#0a0a0d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#c6a15b" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#c6a15b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1e23"/>
+      <stop offset="100%" stop-color="#17171b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="640" height="800" fill="url(#bgGrad)"/>
+  <rect width="640" height="800" fill="url(#glow)"/>
+
+  <!-- faint desk-surface grid for depth -->
+  <g stroke="#f4f2ec" stroke-opacity="0.035" stroke-width="1">
+    <line x1="0" y1="600" x2="640" y2="600"/>
+    <line x1="0" y1="660" x2="640" y2="660"/>
+    <line x1="0" y1="720" x2="640" y2="720"/>
+  </g>
+
+  <!-- ===================== sketch card, top-left ===================== -->
+  <g transform="translate(84,108) rotate(-7)">
+    <rect x="0" y="0" width="150" height="112" rx="6" fill="#17171b" stroke="#f4f2ec" stroke-opacity="0.12"/>
+    <g stroke="#c6a15b" stroke-opacity="0.7" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M18 30 C 40 14, 66 14, 84 30 S 128 46, 132 30"/>
+      <path d="M18 54 C 44 70, 70 40, 96 56 S 128 70, 132 56"/>
+    </g>
+    <line x1="18" y1="82" x2="96" y2="82" stroke="#f4f2ec" stroke-opacity="0.25" stroke-width="3" stroke-linecap="round"/>
+    <line x1="18" y1="94" x2="72" y2="94" stroke="#f4f2ec" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- ===================== typography swatch, top-right ===================== -->
+  <g transform="translate(430,96) rotate(5)">
+    <rect x="0" y="0" width="118" height="118" rx="6" fill="#17171b" stroke="#f4f2ec" stroke-opacity="0.12"/>
+    <text x="59" y="76" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="56" fill="#c6a15b">Aa</text>
+    <line x1="18" y1="96" x2="100" y2="96" stroke="#f4f2ec" stroke-opacity="0.2" stroke-width="2"/>
+  </g>
+
+  <!-- ===================== color palette fan, left of laptop ===================== -->
+  <g transform="translate(40,480)">
+    <circle cx="0" cy="0" r="16" fill="#c6a15b"/>
+    <circle cx="22" cy="-7" r="16" fill="#a8763f"/>
+    <circle cx="42" cy="-16" r="16" fill="#7c6a58"/>
+    <circle cx="60" cy="-30" r="16" fill="#4d5a63"/>
+    <circle cx="76" cy="-48" r="16" fill="#f4f2ec" fill-opacity="0.85"/>
+  </g>
+
+  <!-- ===================== ruler, bottom-left ===================== -->
+  <g transform="translate(96,616) rotate(-4)">
+    <rect x="0" y="0" width="200" height="26" rx="3" fill="#e7dcc4" fill-opacity="0.9"/>
+    <g stroke="#0a0a0d" stroke-opacity="0.55" stroke-width="1.5">
+      <line x1="0" y1="0" x2="0" y2="26"/>
+      <line x1="20" y1="8" x2="20" y2="26"/>
+      <line x1="40" y1="0" x2="40" y2="26"/>
+      <line x1="60" y1="8" x2="60" y2="26"/>
+      <line x1="80" y1="0" x2="80" y2="26"/>
+      <line x1="100" y1="8" x2="100" y2="26"/>
+      <line x1="120" y1="0" x2="120" y2="26"/>
+      <line x1="140" y1="8" x2="140" y2="26"/>
+      <line x1="160" y1="0" x2="160" y2="26"/>
+      <line x1="180" y1="8" x2="180" y2="26"/>
+      <line x1="200" y1="0" x2="200" y2="26"/>
+    </g>
+  </g>
+
+  <!-- ===================== pencil, bottom-right ===================== -->
+  <g transform="translate(478,588) rotate(38)">
+    <rect x="0" y="0" width="150" height="16" rx="4" fill="#c6a15b"/>
+    <rect x="0" y="0" width="150" height="6" rx="3" fill="#f4f2ec" fill-opacity="0.25"/>
+    <path d="M150 0 L172 8 L150 16 Z" fill="#e7dcc4"/>
+    <path d="M166 5 L172 8 L166 11 Z" fill="#3a2f28"/>
+  </g>
+
+  <!-- ===================== laptop ===================== -->
+  <g>
+    <!-- screen -->
+    <rect x="182" y="252" width="276" height="192" rx="10" fill="url(#screenGrad)" stroke="#f4f2ec" stroke-opacity="0.14"/>
+    <!-- screen inner bezel -->
+    <rect x="196" y="266" width="248" height="164" rx="4" fill="#101013"/>
+
+    <!-- mock UI: toolbar -->
+    <rect x="196" y="266" width="248" height="22" fill="#17171b"/>
+    <circle cx="210" cy="277" r="3.5" fill="#c6a15b"/>
+    <circle cx="222" cy="277" r="3.5" fill="#f4f2ec" fill-opacity="0.3"/>
+    <circle cx="234" cy="277" r="3.5" fill="#f4f2ec" fill-opacity="0.3"/>
+
+    <!-- mock UI: canvas with a simple layout -->
+    <rect x="206" y="298" width="140" height="112" rx="3" fill="#1b1b20"/>
+    <rect x="216" y="308" width="86" height="10" rx="2" fill="#c6a15b" fill-opacity="0.8"/>
+    <rect x="216" y="326" width="120" height="6" rx="2" fill="#f4f2ec" fill-opacity="0.22"/>
+    <rect x="216" y="338" width="98" height="6" rx="2" fill="#f4f2ec" fill-opacity="0.16"/>
+    <rect x="216" y="358" width="52" height="38" rx="3" fill="#f4f2ec" fill-opacity="0.08"/>
+    <rect x="274" y="358" width="52" height="38" rx="3" fill="#c6a15b" fill-opacity="0.18"/>
+
+    <!-- mock UI: side panel swatches -->
+    <rect x="356" y="298" width="76" height="112" rx="3" fill="#1b1b20"/>
+    <rect x="366" y="308" width="56" height="8" rx="2" fill="#f4f2ec" fill-opacity="0.2"/>
+    <rect x="366" y="326" width="14" height="14" rx="3" fill="#c6a15b"/>
+    <rect x="384" y="326" width="14" height="14" rx="3" fill="#a8763f"/>
+    <rect x="402" y="326" width="14" height="14" rx="3" fill="#7c6a58"/>
+    <rect x="366" y="344" width="14" height="14" rx="3" fill="#4d5a63"/>
+    <rect x="384" y="344" width="14" height="14" rx="3" fill="#f4f2ec" fill-opacity="0.7"/>
+    <rect x="366" y="368" width="50" height="6" rx="2" fill="#f4f2ec" fill-opacity="0.16"/>
+    <rect x="366" y="380" width="50" height="6" rx="2" fill="#f4f2ec" fill-opacity="0.16"/>
+    <rect x="366" y="392" width="34" height="6" rx="2" fill="#f4f2ec" fill-opacity="0.16"/>
+
+    <!-- cursor -->
+    <path d="M330 350 L330 372 L336 366 L341 375 L345 373 L340 364 L348 364 Z" fill="#f4f2ec"/>
+
+    <!-- keyboard base -->
+    <path d="M158 444 L482 444 L462 486 L178 486 Z" fill="#1e1e23" stroke="#f4f2ec" stroke-opacity="0.12"/>
+    <rect x="290" y="444" width="60" height="6" fill="#0a0a0d" fill-opacity="0.4"/>
+  </g>
+
+  <!-- ===================== mouse ===================== -->
+  <g transform="translate(500,470) rotate(8)">
+    <rect x="0" y="0" width="34" height="52" rx="16" fill="#17171b" stroke="#f4f2ec" stroke-opacity="0.15"/>
+    <line x1="17" y1="6" x2="17" y2="22" stroke="#f4f2ec" stroke-opacity="0.2" stroke-width="2"/>
+  </g>
+
+  <!-- ===================== small plant, bottom-left corner ===================== -->
+  <g transform="translate(560,600)">
+    <path d="M18 60 L10 60 L14 30 Z" fill="#2a2f27"/>
+    <path d="M14 30 C -4 24, -2 -4, 14 4 C 30 -6, 32 22, 14 30 Z" fill="#5c6b4f" fill-opacity="0.85"/>
+    <path d="M14 30 C 2 20, 6 0, 14 4" fill="none" stroke="#c6a15b" stroke-opacity="0.5" stroke-width="1.5"/>
+  </g>
+
+</svg>
